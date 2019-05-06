@@ -17,7 +17,7 @@ int main(int argc,char *argv[])
 
 	printf("\nEnter search element : ");
 	scanf("%d",&s);
-		t1=clock();
+	t1=clock();
  	for(i=0;i<n;i++)
  	{
  		if(a[i]==s)
