@@ -26,7 +26,7 @@ int main(int argc,char *argv[])
  		for(j=i+1;j<n;j++)
  		{
  			if(a[j]<a[lowest])
-		  lowest=j;
+		  	lowest=j;
  	 	}
  	 	temp=a[i];
 		a[i]=a[lowest];
@@ -50,7 +50,7 @@ int main(int argc,char *argv[])
  		for(j=i+1;j<n;j++)
  		{
  			if(a[j]<a[lowest])
-		  lowest=j;
+		  	lowest=j;
 		}
  	 	temp=a[i];
 		a[i]=a[lowest];
@@ -72,7 +72,7 @@ int main(int argc,char *argv[])
  		for(j=i+1;j<n;j++)
  		{
  			if(a[j]<a[lowest])
-		  lowest=j;
+		  	lowest=j;
 		}
  	 	temp=a[i];
 		a[i]=a[lowest];
