@@ -9,8 +9,8 @@ int main(int argc,char *argv[])
 	double m;
 	char *p;
 
-	FILE *fp;			//file
-  	fp=fopen("ins.dat","a");	//file
+	FILE *fp;			
+  	fp=fopen("ins.dat","a");	
 
 	clock_t t1,t2,t3,t4,t5,t6;
 	n=strtol(argv[1], &p, 10);
@@ -32,7 +32,7 @@ int main(int argc,char *argv[])
 	t2=clock();
   	m=(double)(t2-t1)/CLOCKS_PER_SEC;
   	printf("Time Comp = %f\n",m);
-	fprintf(fp,"%d   %f\n",n,m);	//file
+	fprintf(fp,"%d   %f\n",n,m);	
 
 
 	printf("\nFor array in ascending order\n");
@@ -72,7 +72,6 @@ int main(int argc,char *argv[])
 	t6=clock();
  	m=(double)(t6-t5)/CLOCKS_PER_SEC;
  	printf("Time Comp = %f\n",m);
-	
-	fclose(fp);			//file	
+	fclose(fp);			
 	return 0;
 }
