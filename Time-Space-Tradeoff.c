@@ -30,28 +30,26 @@ void main()
   	a[i]='\0';
   	for(i=0;i<n-1;i++)
   	  printf("%d ",a[i]);
-  }
-  else
-	{
-    printf("Element not present\n");
-  }
-  
-  
-  flag=0;
-  for(i=k;i<n;i++) 
-  {
-  	if(a[i]>de)
-  	{
-  	  printf("\nNext larger element is %d\n",a[i]);
-  	  flag=1;
-  	  break;
   	}
-  }
-  if(flag==0)
-  {
-  	printf("\nNo larger element\n");
-  }
-  t2=clock();
-  m=(double)(t2-t1)/CLOCKS_PER_SEC;
-  printf("%f\n",m);
+  	else
+	{
+    		printf("Element not present\n");
+	}
+	flag=0;
+	for(i=k;i<n;i++) 
+	{
+		if(a[i]>de)
+		{
+			printf("\nNext larger element is %d\n",a[i]);
+			flag=1;
+			break;
+		}
+	}
+	if(flag==0)
+	{
+		printf("\nNo larger element\n");
+	}
+	t2=clock();
+	m=(double)(t2-t1)/CLOCKS_PER_SEC;
+	printf("%f\n",m);
 }
