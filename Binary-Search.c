@@ -20,7 +20,7 @@ int main(int argc,char *argv[])
 	
 	t1=clock();
 	if(beg==e)
-    	printf("Element found at pos : %d",0);
+    		printf("Element found at pos : %d",0);
   	else if(last==e)
 		printf("Element found at pos : %d",n-1);
 	else
