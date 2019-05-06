@@ -81,7 +81,6 @@ int main(int argc,char *argv[])
 	t6=clock();
   	m=(double)(t6-t5)/CLOCKS_PER_SEC;
   	printf("Time Comp = %f\n",m);
-
 	fclose(fp);				
 	return 0;
 }
