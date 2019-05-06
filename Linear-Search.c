@@ -13,7 +13,7 @@ int main(int argc,char *argv[])
   	fp=fopen("ls.dat","a");		
 	
 	for(i=1;i<=n;i++)
-	  a[i]=i;
+		a[i]=i;
 
 	printf("\nEnter search element : ");
 	scanf("%d",&s);
