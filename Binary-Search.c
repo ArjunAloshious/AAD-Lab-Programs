@@ -20,26 +20,27 @@ int main(int argc,char *argv[])
 	
 	t1=clock();
 	if(beg==e)
-    printf("Element found at pos : %d",0);
-  else if(last==e)
-	  printf("Element found at pos : %d",n-1);
+    	printf("Element found at pos : %d",0);
+  	else if(last==e)
+		printf("Element found at pos : %d",n-1);
 	else
-  {
-    mid=(beg+last)/2;
-   	while(flag!=1)
-   	{
-			if(a[mid]==e)
- 			{	flag=1;
-        printf("\nElement found at pos : %d",mid);
-      }
-      else if(a[mid]<e)
-      {
-				beg=mid;
-  			mid=(beg+last)/2;                                      
-   		}
-			else if(a[mid]>e)
+  	{
+    		mid=(beg+last)/2;
+   		while(flag!=1)
    		{
-  			last=mid;
+			if(a[mid]==e)
+ 			{
+				flag=1;
+        			printf("\nElement found at pos : %d",mid);
+			}
+      			else if(a[mid]<e)
+      			{
+				beg=mid;
+  				mid=(beg+last)/2;                                      
+   			}
+			else if(a[mid]>e)
+   			{
+  				last=mid;
  				mid=(beg+last)/2;
  			}
 		}
@@ -50,4 +51,4 @@ int main(int argc,char *argv[])
 	fprintf(fp,"%d   %f\n",n,m);
 	fclose(fp);			
 	return 0;
-}   
+}
