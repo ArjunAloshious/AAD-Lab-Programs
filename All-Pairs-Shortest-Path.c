@@ -6,11 +6,11 @@
 void disp_mat(int mat[][V])
 {
   for(int i=0;i<V;++i)
-    {
-      for(int j=0;j<V;++j)
+  {
+  	for(int j=0;j<V;++j)
 	mat[i][j]==INF?printf("%-7s","INF"):printf("%-7d",mat[i][j]);
-      printf("\n");
-    }
+      	printf("\n");
+  }
 }  
 
 int main()
