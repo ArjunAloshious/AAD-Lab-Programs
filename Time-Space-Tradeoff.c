@@ -16,12 +16,12 @@ void main()
 	scanf("%d",&e);
 	for(i=0;i<n;i++)
 	{
-	  if(a[i]==e)
-	  {
-	  	k=i;
-	  	flag=1;
-	  	de=a[i];
-	  }
+		if(a[i]==e)
+		{
+	  		k=i;
+	  		flag=1;
+	  		de=a[i];
+	  	}
 	}
 	if (flag==1)
 	{
@@ -29,7 +29,7 @@ void main()
   		a[i]=a[i+1];
   	a[i]='\0';
   	for(i=0;i<n-1;i++)
-  	  printf("%d ",a[i]);
+  		printf("%d ",a[i]);
   	}
   	else
 	{
