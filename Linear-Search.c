@@ -9,8 +9,8 @@ int main(int argc,char *argv[])
 	char *p;
 	clock_t t1,t2;
 	n=strtol(argv[1], &p, 10);
-	FILE *fp;			//file
-  	fp=fopen("ls.dat","a");		//file
+	FILE *fp;			
+  	fp=fopen("ls.dat","a");		
 	
 	for(i=1;i<=n;i++)
 	  a[i]=i;
@@ -33,7 +33,7 @@ int main(int argc,char *argv[])
 	t2=clock();
 	m=(double)(t2-t1)/CLOCKS_PER_SEC;
   printf("Time Comp = %f\n",m);
-	fprintf(fp,"%d   %f\n",n,m);	//file
-	fclose(fp);			//file
+	fprintf(fp,"%d   %f\n",n,m);	
+	fclose(fp);			
 	return 0;
 }
