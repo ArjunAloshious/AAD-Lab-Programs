@@ -2,26 +2,18 @@
 #include<stdbool.h>
 #include<limits.h>
 
-//#define V 5
 int main()
 {
 	int min=INT_MAX,edges=0,x=0,y=0; 
 	int V;
 	int mat[10][10];
 	printf("Enter size : ");
-	scanf("%d",&V);/*
-	int mat[V][V] = {
-	{0, 9, 75, 0, 0},
-	{9, 0, 95, 19, 42},
-	{75, 95, 0, 51, 66},
-  {0, 19, 51, 0, 31},
-  {0, 42, 66, 31, 0}
-  };*/
- printf("Enter elements : ");
-  for(int i=0;i<V;i++)
- 	 for(int j=0;j<V;j++)
- 		scanf("%d",&mat[i][j]); 
-  bool selected[V];
+	scanf("%d",&V);
+ 	printf("Enter elements : ");
+  	for(int i=0;i<V;i++)
+ 		for(int j=0;j<V;j++)
+ 			scanf("%d",&mat[i][j]); 
+  	bool selected[V];
 	selected[0]=true;
 	for(int i=0;i<V;++i) 
 		selected[i]=false;
