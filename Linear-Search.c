@@ -22,7 +22,7 @@ int main(int argc,char *argv[])
  	{
  		if(a[i]==s)
  		{
- 		  f=1;
+ 		  	f=1;
  			printf("\nElement found at position : %d\n",i);
 		}
 	}
@@ -32,7 +32,7 @@ int main(int argc,char *argv[])
 	}
 	t2=clock();
 	m=(double)(t2-t1)/CLOCKS_PER_SEC;
-  printf("Time Comp = %f\n",m);
+  	printf("Time Comp = %f\n",m);
 	fprintf(fp,"%d   %f\n",n,m);	
 	fclose(fp);			
 	return 0;
