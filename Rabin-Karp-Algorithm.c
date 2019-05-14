@@ -30,7 +30,7 @@ void search(char pat[],char txt[],int q)
 			if(j==M) 
 				printf("Pattern found at index %d \n",i); 
 		} 
-		if (i<N-M) 
+		if(i<N-M) 
 		{ 
 			t=(d*(t-txt[i]*h)+txt[i+M])%q; 
 			if(t<0) 
